@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Fingers guess</title>
+
+    </head>
+
+    <body>
+
+        <div>How many fingers do You see?</div>
+        <input id="textArea">
+        <button id="guessButton">Guess!
+        </button>
+
+        <script type="text/javascript">            
+
+            document.getElementById("guessButton").onclick = function() {
+
+                let randomNumber = Math.floor(Math.random() * 6);
+
+                let guess = document.getElementById("textArea").value
+
+                if (randomNumber == guess) {
+                    alert("You're right!")
+                } else {
+                    alert("Not this time, try again!")
+                };
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
